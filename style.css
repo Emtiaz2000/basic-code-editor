@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+   background: rgb(12, 12 ,11);
+}
+#header{
+    font-family:'Yellowtail', cursive; 
+
+}
+#container{
+    height:75vh;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:40px;
+   
+}
+#html{
+    width: 30%;
+    height:80vh;
+}
+#input-html-text{
+    width:100%;
+    height:80%;
+    resize: none;
+    padding-left: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none !important;
+    border:none !important;
+    background-color: #fff;
+    border-radius:5px;
+}
+
+#css{
+    width: 30%;
+    height:80vh;
+}
+#input-css-text{
+    width:100%;
+    height:80%;
+    resize: none;
+    padding-left: 3px;
+    outline: none !important;
+    border:none !important;
+    font-size: 1rem;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius:5px;
+}
+#js{
+    width: 30%;
+    height:80vh;
+}
+#input-js-text{
+    width:100%;
+    height:80%;
+    padding-left: 3px;
+    resize: none;
+    outline: none !important;
+    border:none !important;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius:5px;
+}
+#button-div{
+    width:20%;
+    height:10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#button{
+    width:50%;
+    height: 50px;
+    border-radius: 5px;
+    background:rgb(233, 184, 50);
+    outline:none;
+    font-weight: bold;
+}
+#output-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#output{
+    width:80%;
+    height:70vh;
+}
+#final-output{
+    height:100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius:10px;
+}

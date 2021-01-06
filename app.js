@@ -7,13 +7,30 @@ const jsText = document.querySelector('#input-js-text');
 const button =  document.querySelector('#button');
 const ifram =  document.querySelector('#final-output');
 
-//try to make custom tab button
+//html editor section
 htmlText.addEventListener('keydown',(e)=>{
+    proventTab(e,htmlText)
+})
+
+//css editing section
+cssText.addEventListener('keydown',(e)=>{
+    proventTab(e,cssText)
+})
+
+//javascript editing section
+jsText.addEventListener('keydown',(e)=>{
+    proventTab(e,jsText)
+})
+
+//to prevent tab button behaviur
+function proventTab(e,selector){
     if(e.key=='Tab'){
         e.preventDefault()
-        console.log('tab')
+        selector.value += '  ';
     }
-})
+}
+
+//click run button working
 button.addEventListener('click',function getOutput(){
     console.log(htmlText.value)
     ifram.contentDocument.body.innerHTML = htmlText.value;

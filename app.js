@@ -9,21 +9,21 @@ const ifram =  document.querySelector('#final-output');
 
 //html editor section
 htmlText.addEventListener('keydown',(e)=>{
-    proventTab(e,htmlText)
+    preventTab(e,htmlText)
 })
 
 //css editing section
 cssText.addEventListener('keydown',(e)=>{
-    proventTab(e,cssText)
+    preventTab(e,cssText)
 })
 
 //javascript editing section
 jsText.addEventListener('keydown',(e)=>{
-    proventTab(e,jsText)
+    preventTab(e,jsText)
 })
 
 //to prevent tab button behaviur
-function proventTab(e,selector){
+function preventTab(e,selector){
     if(e.key=='Tab'){
         e.preventDefault()
         selector.value += '  ';
